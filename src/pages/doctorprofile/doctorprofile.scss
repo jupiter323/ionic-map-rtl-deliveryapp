@@ -1,0 +1,283 @@
+page-doctorprofile {
+    .header {
+        .toolbar-background {
+            background: transparent;
+        }
+        &::after {
+            display: none;
+        }
+        .toolbar-title {
+            display: flex;
+            align-items: center;
+            span {
+                display: block;
+                margin-left: auto;
+                text-align: right;
+                ion-icon {
+                    margin-left: 6px;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    .scroll-content {
+        margin-top: 0 !important;
+    }
+    .segment-button {
+        color: #b9b9b9 !important;
+        border-bottom: none !important;
+        font-size: 1.3rem !important;
+        font-weight: 600 !important;
+        text-transform: none !important;
+        &.segment-activated {
+            color: #d71e1e !important;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                background: #d71e1e;
+                width: 100px;
+                height: 3px;
+                border-radius: 5px;
+                display: block;
+                left: 0;
+                right: 0;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .doctor-detail {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        position: relative;
+        margin-top: -60px;
+        align-items: center;
+        padding-right: 20px;
+        img {
+            width: 95px;
+            height: 95px;
+            margin: 0 20px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+    .overview {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 1px;
+        .col {
+            padding-left: 50px;
+            position: relative;
+            p {
+                font-size: 1.1rem;
+                margin: 0;
+                color: #c4c4c4;
+            }
+            h2 {
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-top: 5px;
+                ion-icon {
+                    position: relative;
+                    margin: 0;
+                    margin-right: -1px;
+                    color: #ffba00;
+                }
+                span {
+                    color: #cdcdcd;
+                }
+            }
+            h3 {
+                font-size: 1.1rem;
+                margin: 0;
+            }
+            ion-icon {
+                position: absolute;
+                color: #c4c4c4;
+                margin-left: -27px;
+            }
+            img {
+                position: absolute;
+                margin-left: -27px;
+                width: 10px;
+                margin-top: 2px;
+            }
+        }
+        .header {
+            padding-left: 23px;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        &.practics {
+            .col {
+                padding: 5px 23px;
+                margin-bottom: 5px;
+                h5 {
+                    margin: 0;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-bottom: 3px;
+                    span {
+                        color: #c4c4c4;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    .mb {
+        padding-top: 1px;
+    }
+    .map-location {
+        position: relative;
+        min-height: 125px;
+        margin-top: 20px;
+        .profile-img {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 4px solid #d71e1e;
+            border-radius: 50%;
+            z-index: 1;
+            &.active {
+                border: 4px solid #25a628;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: -1;
+                    background: rgba(37, 166, 40, 0.2);
+                    top: -14px;
+                    left: -14px;
+                }
+            }
+        }
+    }
+    .fixed {
+        position: fixed;
+        bottom: 0;
+        border-radius: 0;
+        margin: 0;
+        z-index: 999;
+        ion-icon {
+            margin-right: 8px;
+        }
+    }
+    .card {
+        width: 100%;
+        margin: 0px 0 7px 0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        .item {
+            .item-inner {
+                padding-right: 0px;
+            }
+            .label {
+                h2 {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    width: calc(100% - 85px);
+                    color: #3d3d3d;
+                    span {
+                        font-weight: 300;
+                        color: #cbcbcb;
+                    }
+                }
+                p {
+                    font-size: 1.1rem;
+                    width: calc(100% - 85px);
+                    color: #979797;
+                    font-weight: 400;
+                    color: #2f2f2f;
+                    span {
+                        font-weight: 200;
+                        color: #cbcbcb;
+                    }
+                }
+                .rate {
+                    position: absolute;
+                    top: 14px;
+                    right: 16px;
+                    height: 30px;
+                    strong {
+                        margin-right: 4px;
+                        font-size: 1.1rem;
+                    }
+                    ion-icon {
+                        color: #dddddd;
+                        margin-right: -1px;
+                        font-size: 1rem;
+                        &.active {
+                            color: #ffba00;
+                        }
+                    }
+                    span {
+                        display: block;
+                        color: #cecece;
+                        font-size: .9rem;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        ion-card-content {
+            color: #282828;
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding-top: 5px !important;
+        }
+    }
+    .rate-over-all {
+        margin: 7px 0px;
+        padding: 5px 6px;
+        .rate {
+            display: flex;
+            align-items: center;
+            ion-icon {
+                color: #dddddd;
+                font-size: 1.2rem;
+                margin-right: 1px;
+                &.active {
+                    color: #ffba00;
+                }
+            }
+            .select {
+                padding: 0;
+                overflow: visible;
+                float: right;
+                width: 100%;
+                font-size: 1.2rem;
+                text-align: right;
+                position: relative;
+                right: -10px;
+            }
+            span {
+                display: block;
+                color: #cecece;
+                font-size: 1rem;
+                text-align: right;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

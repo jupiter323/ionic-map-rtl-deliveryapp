@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700');
+html,
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+strong {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-light {
+    background: #f9f9f9 !important;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.text-danger {
+    color: #d71e1e !important;
+}
+
+.text-primary {
+    color: #0c8fe8 !important;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-success {
+    color: #25a628 !important;
+}
+
+.toolbar-title span ion-select {
+    border: none;
+}
+
+.scroll-content {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.btn {
+    border-radius: 4px;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    text-transform: none;
+    height: 4.4rem !important;
+    &.danger {
+        background: #d71e1e !important;
+    }
+    &.text-danger {
+        background: #fff !important;
+        color: #d71e1e !important;
+    }
+    &.text-primary {
+        background: #fff !important;
+        color: #0c8fe8 !important;
+    }
+    &.success {
+        background: #25a628 !important;
+        color: #fff!important;
+    }
+    &.text-success {
+        background: #fff !important;
+        color: #25a628 !important;
+    }
+}
+
+.btn-grup {
+    margin: 0 -5px;
+    align-items: center;
+    .col {
+        padding-top: 0;
+        padding-bottom: 0;
+        .btn {
+            margin: 0;
+        }
+    }
+}
+
+.logo {
+    height: 50vh;
+    position: relative;
+    img {
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.defult-tab {
+    ion-segment-button {
+        border: none !important;
+    }
+    .segment-activated {
+        background: transparent !important;
+    }
+}
+
+.header {
+    .toolbar-background {
+        background: #0c8fe8;
+    }
+    .toolbar-title {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .bar-button-default {
+        color: #fff;
+    }
+}
+
+.tabbar {
+    background: #fff !important;
+    .tab-button {
+        color: #d3d3d3;
+        font-size: 1.6rem;
+        &[aria-selected=true] {
+            color: #0c8fe8;
+            font-size: 1.8rem;
+            border-top: 2px solid #0c8fe8;
+            .tab-button-icon {
+                color: #0c8fe8;
+                font-size: 2rem;
+            }
+        }
+        .tab-button-icon {
+            color: #d3d3d3;
+            font-size: 1.9rem;
+        }
+    }
+}
+
+.difault-form .list .item-block .item-inner {
+    box-shadow: none !important;
+}

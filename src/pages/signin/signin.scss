@@ -1,0 +1,65 @@
+page-signin {
+    .segment-button {
+        color: #b9b9b9 !important;
+        border-bottom: none !important;
+        font-size: 1.3rem !important;
+        font-weight: 600 !important;
+        text-transform: none !important;
+        &.segment-activated {
+            color: #0c8fe8 !important;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                background: #0c8fe8;
+                width: 50px;
+                height: 4px;
+                border-radius: 5px;
+                display: block;
+                left: 0;
+                right: 0;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .difault-form {
+        position: relative;
+        .item {
+            padding: 0;
+            .text-input {
+                font-weight: 300;
+                font-size: 1.3rem;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .list {
+            border: none !important;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 10px;
+            .item-input {
+                border: none !important;
+                min-height: 4rem;
+            }
+            .item-block {
+                .item-inner {
+                    border: none !important;
+                    background: #eaeaea;
+                    border-radius: 3px;
+                    margin: 10px 0 0;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .password {
+            position: absolute;
+            z-index: 99;
+            color: #d71e1e;
+            right: 45px;
+            margin-top: -3rem;
+            font-size: 1.3rem;
+        }
+    }
+}

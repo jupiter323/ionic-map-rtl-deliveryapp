@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ask doctor
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <p padding-left padding-right><strong>Describe your issue</strong></p>
+    <ion-list>
+        <ion-item>
+            <ion-label>Treatment Type</ion-label>
+            <ion-select [(ngModel)]="Treatment" interface="popover">
+                <ion-option value="v1">Bones & Join Problem</ion-option>
+                <ion-option value="v2">Blood Presser Problem</ion-option>
+                <ion-option value="v3">Skin Problem</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Title</ion-label>
+            <ion-input type="text" placeholder="Tap to add title (100 words)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-textarea type="text" placeholder="Describe your issue (300 words)"></ion-textarea>
+        </ion-item>
+        <ion-item>
+            <ion-label for="file">File attachment (optional)<span class="text-success" float-right>Upload file</span></ion-label>
+            <ion-input type="file" placeholder="Upload file" id="file"></ion-input>
+        </ion-item>
+    </ion-list>
+    <p text-center>Usually our doctor reply in 5-10 minutes</p>
+
+    <button ion-button full class="btn success fixed">Submit Question</button>
+</ion-content>

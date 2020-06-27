@@ -1,0 +1,7 @@
+{
+  "name": "appointment",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

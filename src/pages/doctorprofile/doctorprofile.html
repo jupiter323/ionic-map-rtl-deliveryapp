@@ -1,0 +1,339 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            &nbsp;
+            <span>
+                <ion-icon name="ios-bookmark-outline" item-start></ion-icon>
+                <ion-icon name="md-share" item-start></ion-icon>
+                <ion-icon name="md-more" item-start></ion-icon>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <img src="assets/imgs/img-1-burl.png" style="width: 100%;display: block;">
+    <div class="doctor-detail">
+        <img src="assets/imgs/profile4.png">
+        <div>
+            <h2 class="text-white">Dr.Joseph Williamson</h2>
+            <p class="text-white">Cardiac Surgen</p>
+            <h3>MBBS, MCH - Cardio Therecic & Vascular Surgery, FRCS Surgery</h3>
+        </div>
+    </div>
+    <div class="defult-tab bg-white">
+        <ion-segment [(ngModel)]="doctor" padding-left padding-right>
+            <ion-segment-button value="about" class="text-white">
+                About
+            </ion-segment-button>
+            <ion-segment-button value="feedback" class="text-white">
+                Feedback
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+
+    <div [ngSwitch]="doctor" class="bg-light mb">
+        <ion-list *ngSwitchCase="'about'">
+            <div class="bg-white overview">
+                <p class="text-danger header">Overview</p>
+                <ion-row>
+                    <ion-col col-6>
+                        <div>
+                            <ion-icon name="md-medkit"></ion-icon>
+                            <p>Experience</p>
+                            <h2>18 Years</h2>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <ion-icon name="md-thumbs-up"></ion-icon>
+                            <p>Feedback</p>
+                            <h2>4.9
+                                <ion-icon name="md-star" class="active"></ion-icon>
+                                <ion-icon name="md-star" class="active"></ion-icon>
+                                <ion-icon name="md-star" class="active"></ion-icon>
+                                <ion-icon name="md-star" class="active"></ion-icon>
+                                <ion-icon name="md-star"></ion-icon>
+                                <span>(124)</span>
+                            </h2>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <ion-icon name="logo-usd"></ion-icon>
+                            <p>Consultancy fees</p>
+                            <h2>$28</h2>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <ion-icon name="md-time"></ion-icon>
+                            <p>Availability</p>
+                            <h2>Available at 012:00 to 13:00</h2>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <div class="bg-white overview">
+                <p class="text-danger header">Address</p>
+                <p class="header"><strong>Apple Hospital, Water street, Wallington, New York. </strong></p>
+                <div class="map-location">
+                    <img src="assets/imgs/map-location.png" style="position: absolute;height: 100%;bottom: 0;z-index: 0;">
+                    <div class="profile-img active" style="top: 42%; left: 45%"><img src="assets/imgs/profile3.png"></div>
+                </div>
+            </div>
+            <div class="bg-white overview">
+                <p class="text-danger header">Services</p>
+                <ion-row>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Hypertension Treatment</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Health Checkup (General)</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>COPD Treatment</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Fever Treatment</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Diabetes Managment</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Non Intereventional Cardiology</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>ECG</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Diabetology</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Obesity Treatment</h3>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <br>
+            </div>
+            <div class="bg-white overview">
+                <p class="text-danger header">Specialization</p>
+                <ion-row>
+                    <ion-col col-12>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Gernal Physican</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-12>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Family Physican</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-12>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Cardiologist</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-12>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Consultant Physican</h3>
+                        </div>
+                    </ion-col>
+                    <ion-col col-12>
+                        <div>
+                            <img src="assets/imgs/list-icon.png">
+                            <h3>Diabetologist</h3>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <br>
+            </div>
+            <div class="bg-white overview practics">
+                <p class="text-danger header">Also Practics at</p>
+                <ion-row>
+                    <ion-col col-12>
+                        <h5>Health Roots Clinics</h5>
+                        <p>1124, Edison Street, Willington, Newyork </p>
+                    </ion-col>
+                    <ion-col col-12>
+                        <h5>Appolo Hospital</h5>
+                        <p>JJ towers, Johnson street, Hemilton, New york.</p>
+                    </ion-col>
+                </ion-row>
+                <br>
+            </div>
+            <div class="bg-white overview practics">
+                <p class="text-danger header">Available Timings</p>
+                <ion-row>
+                    <ion-col col-6>
+                        <h5>Mon<span float-right>12:00 to 13:00</span></h5>
+                    </ion-col>
+                    <ion-col col-6>
+                        <h5>Tue<span float-right>12:00 to 13:00</span></h5>
+                    </ion-col>
+                    <ion-col col-6>
+                        <h5>Wed<span float-right>12:00 to 13:00</span></h5>
+                    </ion-col>
+                    <ion-col col-6>
+                        <h5>Thu<span float-right>12:00 to 13:00</span></h5>
+                    </ion-col>
+                    <ion-col col-6>
+                        <h5>Fri<span float-right>Closed</span></h5>
+                    </ion-col>
+                    <ion-col col-6>
+                        <h5>Sat<span float-right>12:00 to 13:00</span></h5>
+                    </ion-col>
+                    <ion-col col-6>
+                        <h5>Sun<span float-right>Closed</span></h5>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <br><br>
+            <button ion-button full class="btn success fixed" (click)="appointmentbook()"><ion-icon name="md-calendar"></ion-icon>Book Appointment now</button>
+        </ion-list>
+        <ion-list *ngSwitchCase="'feedback'">
+
+            <div class="bg-white rate-over-all">
+                <ion-row>
+                    <ion-col col-6>
+                        <div class="rate">
+                            <span>Overall</span>
+                            <ion-icon name="md-star" class="active"></ion-icon>
+                            <ion-icon name="md-star" class="active"></ion-icon>
+                            <ion-icon name="md-star" class="active"></ion-icon>
+                            <ion-icon name="md-star" class="active"></ion-icon>
+                            <ion-icon name="md-star"></ion-icon>
+                            <span>(124)</span>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6 style="padding-right: 0;">
+                        <div class="rate">
+                            <span>Short By</span>
+                            <ion-select [(ngModel)]="Short" interface="popover" class="location">
+                                <ion-option value="n1">Recent</ion-option>
+                                <ion-option value="n2">Oldest</ion-option>
+                            </ion-select>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/profile1.png">
+                    </ion-avatar>
+                    <h2><span>To</span> Dr. Josephan Williamson</h2>
+                    <p><span>Visited For</span> Cardiac Surgeon</p>
+                    <div class="rate">
+                        <strong>4.5</strong>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star"></ion-icon>
+                        <span>20 Dec 2017</span>
+                    </div>
+                </ion-item>
+                <ion-card-content>
+                    Components allow you to quickly construct an interface for your app. Ionic comes with a number of components, including modals, popups, and cards.
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/profile1.png">
+                    </ion-avatar>
+                    <h2><span>To</span> Dr. Josephan Williamson</h2>
+                    <p><span>Visited For</span> Cardiac Surgeon</p>
+                    <div class="rate">
+                        <strong>4.5</strong>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star"></ion-icon>
+                        <span>20 Dec 2017</span>
+                    </div>
+                </ion-item>
+                <ion-card-content>
+                    Components allow you to quickly construct an interface for your app. Ionic comes with a number of components, including modals, popups, and cards.
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/profile1.png">
+                    </ion-avatar>
+                    <h2><span>To</span> Dr. Josephan Williamson</h2>
+                    <p><span>Visited For</span> Cardiac Surgeon</p>
+                    <div class="rate">
+                        <strong>4.5</strong>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star"></ion-icon>
+                        <span>20 Dec 2017</span>
+                    </div>
+                </ion-item>
+                <ion-card-content>
+                    Components allow you to quickly construct an interface for your app. Ionic comes with a number of components, including modals, popups, and cards.
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/profile1.png">
+                    </ion-avatar>
+                    <h2><span>To</span> Dr. Josephan Williamson</h2>
+                    <p><span>Visited For</span> Cardiac Surgeon</p>
+                    <div class="rate">
+                        <strong>4.5</strong>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star" class="active"></ion-icon>
+                        <ion-icon name="md-star"></ion-icon>
+                        <span>20 Dec 2017</span>
+                    </div>
+                </ion-item>
+                <ion-card-content>
+                    Components allow you to quickly construct an interface for your app. Ionic comes with a number of components, including modals, popups, and cards.
+                </ion-card-content>
+            </ion-card><br><br>
+            <button ion-button full class="btn success fixed" (click)="addfeedback()"><ion-icon name="md-thumbs-up"></ion-icon>Give Feedback</button>
+        </ion-list>
+    </div>
+
+</ion-content>

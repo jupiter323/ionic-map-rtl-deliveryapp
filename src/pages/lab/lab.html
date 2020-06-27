@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Lab & Test
+            <span><small margin-right>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <ion-option value="n1">Wallington</ion-option>
+                <ion-option value="n2">Nerobi</ion-option>
+                <ion-option value="n3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-searchbar (ionInput)="getItems($event)" (click)="tests()" placeholder="Search for tests"></ion-searchbar>
+
+    <ion-card>
+        <ion-item (click)="labdetails()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/lab-1.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <h6 class="text-success">250+ Test Available<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item (click)="labdetails()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/lab-2.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <h6 class="text-success">250+ Test Available<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item (click)="labdetails()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/lab-3.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <h6 class="text-success">250+ Test Available<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item (click)="labdetails()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/lab-4.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <h6 class="text-success">250+ Test Available<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+
+</ion-content>

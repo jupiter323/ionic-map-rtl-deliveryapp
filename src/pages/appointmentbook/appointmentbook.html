@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Select Date & Time
+        </ion-title>
+    </ion-navbar>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/profile1.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+        </ion-item>
+    </ion-card>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="calender-container">
+        <div class="calander">
+            <div class="calander-row">
+                <div class="day active"><span>MON</span>12</div>
+                <div class="day"><span>TUE</span>13</div>
+                <div class="day"><span>WED</span>14</div>
+                <div class="day"><span>THU</span>15</div>
+                <div class="day"><span>FRI</span>16</div>
+                <div class="day"><span>SAT</span>17</div>
+                <div class="day"><span>SUN</span>18</div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-calander">
+        <ion-icon name="md-calendar" class="text-success"></ion-icon>
+    </div>
+    <div padding>
+        <p>Available Times</p>
+        <div class="timeing">
+            <ion-row>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+                <ion-col col-3><span>01:30 PM</span></ion-col>
+            </ion-row>
+        </div>
+        <p>Appointment for...</p>
+        <div class="difault-form">
+            <ion-item class="bg-light">
+                <ion-input type="text" placeholder="Full Name"></ion-input>
+            </ion-item>
+            <ion-item class="bg-light">
+                <ion-input type="password" placeholder="Phone Number"></ion-input>
+            </ion-item>
+            <br>
+            <button ion-button full class="btn success fixed" (click)="chatwithdoctor()">Confirm Appointment</button>
+        </div>
+    </div>
+</ion-content>

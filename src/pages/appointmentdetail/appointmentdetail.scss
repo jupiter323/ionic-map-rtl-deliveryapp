@@ -1,0 +1,78 @@
+page-appointmentdetail {
+    .card {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        .item {
+            ion-avatar {
+                border:solid 1px #979797;
+                border-radius:50%;
+            }
+            .label {
+                h2 {
+                    font-size: 1.35rem;
+                    font-weight: 600;
+                    width: calc(100% - 50px);
+                }
+                p {
+                    font-size: 1.2rem;
+                    width: calc(100% - 50px);
+                    color: #979797;
+                }
+                span {
+                    position: absolute;
+                    top: 15px;
+                    right: 16px;
+                    font-size: 1.15rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .appot-detail {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .col {
+            padding: 0;
+            &.icon {
+                text-align: center;
+                max-width: 38px;
+                min-width: 38px;
+            }
+            &.option {
+                text-align: right;
+                max-width: 80px;
+                min-width: 80px;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            &.detail {
+                padding-left: 20px;
+                small {
+                    display: block;
+                    color: #979797;
+                    margin-bottom: 5px;
+                    font-weight: 300;
+                }
+                strong {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+                span {
+                    display: block;
+                    color: #979797;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .fix-btn {
+        position: fixed;
+        bottom: 0;
+        z-index: 9999;
+        width: 100%;
+        left: 0;
+        padding: 0 32px;
+    }
+}

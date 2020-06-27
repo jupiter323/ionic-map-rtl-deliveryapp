@@ -1,0 +1,75 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="md-close" (click)="dismiss()"></ion-icon>&nbsp;&nbsp;&nbsp;Filter
+            <span class="location" (click)="dismiss()">Reset</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light" padding-top>
+    <ion-list radio-group>
+        <ion-list-header>
+            <span class="text-danger">Sort by</span>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>Consultancy fees</ion-label>
+            <ion-radio checked="true" value="fee"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Rating</ion-label>
+            <ion-radio value="rate"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Nearer place</ion-label>
+            <ion-radio value="near"></ion-radio>
+        </ion-item>
+    </ion-list>
+    <div></div>
+    <ion-list radio-group>
+        <ion-list-header>
+            <span class="text-danger">Consultancy fees</span>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>0$ - 10 $</ion-label>
+            <ion-radio checked="true" value="0-10"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>11$ - 30 $</ion-label>
+            <ion-radio value="11-30"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>31$ - more</ion-label>
+            <ion-radio value="31-more"></ion-radio>
+        </ion-item>
+    </ion-list>
+    <div></div>
+    <ion-list class="check-items" radio-group>
+        <ion-list-header>
+            <span class="text-danger">Gender</span>
+        </ion-list-header>
+        <ion-row class="bg-white">
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label>Male</ion-label>
+                    <ion-radio checked="true" value="male"></ion-radio>
+                </ion-item>
+            </ion-col>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label>Female</ion-label>
+                    <ion-radio value="female"></ion-radio>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-list>
+    <p style="position: relative;height: 60px"></p>
+    <div class="fix-btn"><button ion-button full class="btn success" (click)="dismiss()">Apply Now</button></div>
+
+</ion-content>

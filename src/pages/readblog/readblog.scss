@@ -1,0 +1,52 @@
+page-readblog {
+    .header {
+        &::after {
+            display: none;
+        }
+        .toolbar-background {
+            background: transparent;
+        }
+    }
+    .fixed-content,
+    .scroll-content {
+        margin-top: 0 !important;
+    }
+    .card {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        ion-card-content {
+            .blog-text {
+                p {
+                    font-size: 1rem;
+                    color: #cecece;
+                    display: flex;
+                    span {
+                        margin-right: auto;
+                        font-weight: 500;
+                    }
+                }
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-top: .6rem;
+                    margin-bottom: 1.4rem;
+                }
+                h6 {
+                    font-size: 1.2rem;
+                    line-height: 1.7rem;
+                    margin-bottom: 2rem;
+                    font-weight: 500;
+                }
+                h5 {
+                    font-size: 1.3rem;
+                    margin-bottom: 2rem;
+                    font-weight: 600;
+                }
+                strong {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

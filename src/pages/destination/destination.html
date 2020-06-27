@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Choose your destination
+            <span><small margin-right>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <ion-option value="n1">Wallington</ion-option>
+                <ion-option value="n2">Nerobi</ion-option>
+                <ion-option value="n3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-searchbar (ionInput)="getItems($event)" (click)="tests()" placeholder="Banks, hospitals, communications, government agencies"></ion-searchbar>
+
+    <ion-card>
+        <ion-item style="background-image:url(assets/imgs/service1.png);background-size: 100% auto;">
+            <h3>Banks<button ion-button class="btn primary">Choose</button></h3>
+            <p>Choose from the list of banks</p>
+            <p>National Bank of kuwait, Boubyan Bank, Gulf Bank, AI Ahli United, Bank of Kuwait</p>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item style="background-image:url(assets/imgs/service2.png);background-size: 100% auto;">
+            <h3>Hospitals<button ion-button class="btn primary">Choose</button></h3>
+            <p>Choose from the list of hospitals</p>
+            <p>AI-Amiri Hospital, AI-Sabah Hospital, Zain Hospital, AI-Seef Hospital</p>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item style="background-image:url(assets/imgs/service3.png);background-size: 100% auto;">
+            <h3>Entertainment<button ion-button class="btn primary">Choose</button></h3>
+            <p>Choose from the list of carriers</p>
+            <p>Zain, Ooredoo, STC</p>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item style="background-image:url(assets/imgs/service4.png);background-size: 100% auto;">
+            <h3>Shopping<button ion-button class="btn primary">Choose</button></h3>
+            <p>Choose from a list of international brands</p>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item style="background-image:url(assets/imgs/service5.png);background-size: 100% auto;">
+            <h3>Communications<button ion-button class="btn primary">Choose</button></h3>
+        </ion-item>
+    </ion-card>
+
+</ion-content>

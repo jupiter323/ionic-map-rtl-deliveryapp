@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Find Doctor
+            <span><small margin-right>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <ion-option value="n1">Wallington</ion-option>
+                <ion-option value="n2">Nerobi</ion-option>
+                <ion-option value="n3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Doctor, specialities, clinic"></ion-searchbar>
+    <div class="bg-white">
+        <p class="text-danger">Top Specialities</p>
+        <ion-list>
+            <ion-item (click)="doctroslist()">
+                Cardiologist
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Orthalmologist
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Dermatologist
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Gynecologist
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Neonatologist
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+        </ion-list>
+    </div>
+    <div class="bg-white">
+        <p class="text-danger">List of Specialities</p>
+        <ion-list>
+            <ion-item>
+                Addiction Psychiatrist
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Adolescent medicine Specialities
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Allegrist (immunologist)
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Addiction Psychiatrist
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Adolescent medicine Specialities
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                Allegrist (immunologist)
+                <span float-right>234</span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

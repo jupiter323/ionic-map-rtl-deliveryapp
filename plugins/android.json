@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.toptal.reservation"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.toptal.reservation"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.toptal.reservation"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.toptal.reservation"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.toptal.reservation"
+    }
+  },
+  "dependent_plugins": {}
+}

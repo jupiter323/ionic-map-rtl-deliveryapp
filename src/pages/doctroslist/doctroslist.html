@@ -1,0 +1,178 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-select [(ngModel)]="category" interface="popover" style="padding-left: 0;">
+                <ion-option value="a1">Cardiologist</ion-option>
+                <ion-option value="a2">Orthalmologist</ion-option>
+                <ion-option value="a3">Dermatologist</ion-option>
+            </ion-select>
+            <span class="location"><small margin-right>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <ion-option value="b1">Wallington</ion-option>
+                <ion-option value="b2">Nerobi</ion-option>
+                <ion-option value="b3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+    <div class="filter" padding>
+        <ion-row>
+            <ion-col col-4 class="text-danger" text-left (click)="filter()">
+                <ion-icon name="md-funnel"></ion-icon>Filter</ion-col>
+            <ion-col col-4 text-center>234 result found</ion-col>
+            <ion-col col-4 class="text-danger" text-right (click)="map()">View in map</ion-col>
+        </ion-row>
+    </div>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/profile1.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <button ion-button clear class="btn success" (click)="doctorprofile()">Book</button>
+        </ion-item>
+        <ion-card-content>
+            At apple hospital, Walter street, Wallington
+            <ion-scroll scrollX="true" style="height:60px;white-space: nowrap;">
+                <img src="assets/imgs/img-1.png">
+                <img src="assets/imgs/img-2.png">
+                <img src="assets/imgs/img-3.png">
+                <img src="assets/imgs/img-4.png">
+                <img src="assets/imgs/img-5.png">
+            </ion-scroll>
+        </ion-card-content>
+
+        <ion-row class="about-row">
+            <ion-col col-5 center text-left>
+                Experience <strong>22 Years</strong>
+            </ion-col>
+            <ion-col center text-center>
+                Fee <strong>$30</strong>
+            </ion-col>
+            <ion-col col-5 center text-right>
+                Feedback
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star"></ion-icon>
+                <span>&nbsp;&nbsp;(123)</span>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/profile2.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <button ion-button clear class="btn success" (click)="doctorprofile()">Book</button>
+        </ion-item>
+        <ion-card-content>
+            At apple hospital, Walter street, Wallington,New york
+            <ion-scroll scrollX="true" style="height:60px;white-space: nowrap;">
+                <img src="assets/imgs/img-1.png">
+                <img src="assets/imgs/img-2.png">
+                <img src="assets/imgs/img-3.png">
+                <img src="assets/imgs/img-4.png">
+                <img src="assets/imgs/img-5.png">
+            </ion-scroll>
+        </ion-card-content>
+        <ion-row class="about-row">
+            <ion-col col-5 center text-left>
+                Experience <strong>22 Years</strong>
+            </ion-col>
+            <ion-col center text-center>
+                Fee <strong>$30</strong>
+            </ion-col>
+            <ion-col col-5 center text-right>
+                Feedback
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star"></ion-icon>
+                <span>&nbsp;&nbsp;(123)</span>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/profile3.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <button ion-button clear class="btn success" (click)="doctorprofile()">Book</button>
+        </ion-item>
+        <ion-card-content>
+            At apple hospital, Walter street, Wallington,New york
+            <ion-scroll scrollX="true" style="height:60px;white-space: nowrap;">
+                <img src="assets/imgs/img-1.png">
+                <img src="assets/imgs/img-2.png">
+                <img src="assets/imgs/img-3.png">
+                <img src="assets/imgs/img-4.png">
+                <img src="assets/imgs/img-5.png">
+            </ion-scroll>
+        </ion-card-content>
+        <ion-row class="about-row">
+            <ion-col col-5 center text-left>
+                Experience <strong>22 Years</strong>
+            </ion-col>
+            <ion-col center text-center>
+                Fee <strong>$30</strong>
+            </ion-col>
+            <ion-col col-5 center text-right>
+                Feedback
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star"></ion-icon>
+                <span>&nbsp;&nbsp;(123)</span>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/profile4.png">
+            </ion-avatar>
+            <h2>Dr. Josephan Williamson</h2>
+            <p>Cardiac Surgeon</p>
+            <button ion-button clear class="btn success">Book</button>
+        </ion-item>
+        <ion-card-content>
+            At apple hospital, Walter street, Wallington,New york
+            <ion-scroll scrollX="true" style="height:60px;white-space: nowrap;">
+                <img src="assets/imgs/img-1.png">
+                <img src="assets/imgs/img-2.png">
+                <img src="assets/imgs/img-3.png">
+                <img src="assets/imgs/img-4.png">
+                <img src="assets/imgs/img-5.png">
+            </ion-scroll>
+        </ion-card-content>
+        <ion-row class="about-row">
+            <ion-col col-5 center text-left>
+                Experience <strong>22 Years</strong>
+            </ion-col>
+            <ion-col center text-center>
+                Fee <strong>$30</strong>
+            </ion-col>
+            <ion-col col-5 center text-right>
+                Feedback
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star" class="active"></ion-icon>
+                <ion-icon name="md-star"></ion-icon>
+                <span>&nbsp;&nbsp;(123)</span>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-content>

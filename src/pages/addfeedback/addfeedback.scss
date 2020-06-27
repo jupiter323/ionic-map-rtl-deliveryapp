@@ -1,0 +1,70 @@
+page-addfeedback {
+    ion-header {
+        .card {
+            width: 100%;
+            margin: 0;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            background: #d71e1e;
+            .item {
+                background: #d71e1e;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                .label {
+                    h2 {
+                        font-size: 1.35rem;
+                        font-weight: 600;
+                        width: calc(100% - 50px);
+                        color: #fff;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                        width: calc(100% - 50px);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .feedback {
+        margin-bottom: 5px;
+        background: #fff;
+    }
+    .difault-form {
+        position: relative;
+        .item-inner {
+            box-shadow: none !important;
+            border: none !important;
+            background: #eaeaea;
+            border-radius: 3px;
+            margin: 10px 0 0;
+            padding-left: 10px;
+        }
+        .item {
+            padding: 0;
+            .text-input {
+                font-weight: 300;
+                font-size: 1.1rem;
+            }
+        }
+        .list {
+            border: none !important;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 10px;
+            .item-input {
+                border: none !important;
+                min-height: 4rem;
+            }
+        }
+    }
+    .fixed {
+        position: fixed;
+        margin: auto;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        bottom: 0;
+        width: calc(100% - 32px);
+        margin-bottom: 10px
+    }
+}

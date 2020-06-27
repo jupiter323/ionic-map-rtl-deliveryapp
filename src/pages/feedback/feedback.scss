@@ -1,0 +1,70 @@
+page-feedback {
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        .item {
+            .label {
+                h2 {
+                    font-size: 1.35rem;
+                    font-weight: 600;
+                    width: calc(100% - 85px);
+                }
+                p {
+                    font-size: 1.2rem;
+                    width: calc(100% - 85px);
+                    color: #979797;
+                }
+                .item-button {
+                    position: absolute;
+                    top: 16px;
+                    right: 10px;
+                    padding: 1px 25px;
+                    height: 30px;
+                }
+            }
+        }
+        ion-card-content {
+            color: #979797;
+            font-size: 1.25rem;
+            font-weight: 300;
+            .img-container {
+                width: calc(100% + 16px);
+                margin-top: 10px;
+                overflow: hidden;
+                overflow-x: visible;
+                .imges-row {
+                    width: 465px;
+                    img {
+                        width: 90px;
+                        display: block;
+                        float: left;
+                        margin-right: 3px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+        .about-row {
+            padding: 0;
+            margin: -3px 16px 10px;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: #979797;
+            font-weight: 300;
+            .col {
+                padding: 5px 0;
+            }
+            strong {
+                color: #000;
+                margin-left: 3px;
+            }
+            ion-icon {
+                color: #dddddd;
+                margin-right: -1px;
+                &.active {
+                    color: #ffba00;
+                }
+            }
+        }
+    }
+}

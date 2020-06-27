@@ -1,0 +1,91 @@
+page-finddoctor {
+    .toolbar-title {
+        display: flex;
+        align-items: center;
+        img {
+            width: 90px;
+        }
+        span {
+            display: block;
+            margin-left: auto;
+            text-align: right;
+            ion-select {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0;
+                font-size: 1.5rem;
+                .select-icon {
+                    width: 16px;
+                    .select-icon-inner {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    ion-searchbar {
+        margin-bottom: 1rem;
+        .searchbar-search-icon {
+            top: 0 !important;
+            bottom: 0 !important;
+            margin: auto;
+        }
+        padding: 0 !important;
+        height: 54px;
+        .searchbar-input {
+            line-height: 44px !important;
+            box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.12) !important;
+        }
+    }
+    .item {
+        border: none !important;
+        padding: 0 3rem;
+        img {
+            width: 22px;
+            margin-top: -6px !important;
+        }
+        .item-inner {
+            border: none !important;
+            margin-left: 10px !important;
+            span {
+                color: #3d3d3d;
+                font-size: 1.5rem;
+                font-weight: 600;
+                small {
+                    display: block;
+                    margin-top: 3px;
+                    color: #898989;
+                    font-weight: 500;
+                }
+            }
+            ion-icon {
+                font-size: 1.9rem;
+                color: #898989;
+                margin: 0;
+                top: -2px;
+                position: relative;
+            }
+        }
+    }
+    .recent-search {
+        .item {
+            img {
+                margin-top: 9px !important;
+            }
+        }
+        .item-inner {
+            span {
+                color: #6c6c6c;
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    p {
+        &.text-danger {
+            padding: 16px 32px;
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+    }
+}

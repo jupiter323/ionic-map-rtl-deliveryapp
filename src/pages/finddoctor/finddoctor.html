@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Find Doctor
+            <span><small  margin-right>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <ion-option value="n1">Wallington</ion-option>
+                <ion-option value="n2">Nerobi</ion-option>
+                <ion-option value="n3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Doctor, specialities, clinic"></ion-searchbar>
+
+    <div class="recent-search bg-white">
+        <p class="text-danger">Recent Search<span float-right class="text-success">Clear History</span></p>
+        <ion-list>
+            <ion-item>
+                <img src="assets/imgs/recent.png" item-start>
+                <span>
+                    Cardiologist
+                </span>
+            </ion-item>
+            <ion-item>
+                <img src="assets/imgs/recent.png" item-start>
+                <span>
+                    Cardiovascular surgeon
+                </span>
+
+
+            </ion-item>
+            <ion-item>
+                <img src="assets/imgs/recent.png" item-start>
+                <span>
+                    Appolo hospital
+                </span>
+            </ion-item>
+        </ion-list>
+    </div>
+
+    <div class="quick-link bg-white">
+        <p class="text-danger">Quick Links</p>
+        <ion-list>
+            <ion-item (click)="specilities()">
+                <img src="assets/imgs/ic_doctors.png" item-start>
+                <span>
+                    Doctor
+                    <small>Allergist, Cardiologists, Dermatologiest</small>
+                </span>
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                <img src="assets/imgs/ic_dentist.png" item-start>
+                <span>
+                    Dentist
+                    <small>Dentists, Prosthodonitions etc.</small>
+                </span>
+
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                <img src="assets/imgs/ic_ayurvedic.png" item-start>
+                <span>
+                    Dentist
+                    <small>Ayurveda experties, Homeoprthi, etc </small>
+                </span>
+
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+            <ion-item>
+                <img src="assets/imgs/ic_therapist.png" item-start>
+                <span>
+                    Therapst & Nutritionists
+                    <small>Acupunturist, Physiotherapist, etc</small>
+                </span>
+
+                <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </ion-item>
+        </ion-list>
+    </div>
+
+</ion-content>

@@ -1,0 +1,83 @@
+page-lab {
+    .toolbar-title {
+        display: flex;
+        align-items: center;
+        img {
+            width: 90px;
+        }
+        span {
+            display: block;
+            margin-left: auto;
+            text-align: right;
+            ion-select {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0;
+                font-size: 1.5rem;
+                .select-icon {
+                    width: 16px;
+                    .select-icon-inner {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .searchbar {
+        padding: 0;
+        margin-bottom: 10px;
+        .searchbar-input {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            font-size: 1.2rem;
+        }
+        .searchbar-search-icon {
+            background-size: 16px;
+            opacity: .5;
+            background-position: center;
+        }
+    }
+    .card {
+        width: 100%;
+        margin: 0 0 4px 0;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        .item {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            ion-avatar {
+                width: 85px;
+                height: 85px;
+                img {
+                    width: 85px;
+                    height: 85px;
+                    border-radius: 0;
+                }
+            }
+            .label {
+                margin: 0 8px 0 0;
+                height: 85px;
+                h2 {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 1.15rem;
+                    color: #979797;
+                }
+                h6 {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+                    .btn {
+                        width: 90px;
+                        margin: 0;
+                        margin-left: auto;
+                        padding: 5px;
+                        height: 30px !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <span><small margin-right>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <small>Location</small>
+                <ion-option value="n1">Wallington</ion-option>
+                <ion-option value="n2">Nerobi</ion-option>
+                <ion-option value="n3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div align="center" style="margin-top:20px;">
+        <img src="assets/imgs/logo.png" width="30%">
+    </div>
+    <div class="book-now"><button (click)="choose_destination()" ion-button full class="btn success">Book an appointment Now</button></div>
+    <div class="">
+        <ion-list class="doctor-list">
+            <ion-row class="bg-white">
+                <ion-col text-center class="date">
+                    <small>WED</small>
+                    <strong class="text-primary">12</strong>
+                    <small>12:00</small>
+                </ion-col>
+                <ion-col>
+                    <ion-card>
+                        <ion-item>
+                            <ion-avatar item-start>
+                                <img src="assets/imgs/nakta.png">
+                            </ion-avatar>
+                            <h2>National bank of Kuwait</h2>
+                            <p>Open and account</p>
+                        </ion-item>
+                        <ion-card-content>
+                            Shuwaikh - Zain Company - main branch
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+            <ion-row class="bg-white">
+                <ion-col text-center class="date">
+                    <small>WED</small>
+                    <strong class="text-primary">12</strong>
+                    <small>12:00</small>
+                </ion-col>
+                <ion-col>
+                    <ion-card>
+                        <ion-item>
+                            <ion-avatar item-start>
+                                <img src="assets/imgs/nakta.png">
+                            </ion-avatar>
+                            <h2>National bank of Kuwait</h2>
+                            <p>Open and account</p>
+                        </ion-item>
+                        <ion-card-content>
+                            Shuwaikh - Zain Company - main branch
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="bg-white">
+                <ion-col text-center class="date">
+                    <small>WED</small>
+                    <strong class="text-primary">12</strong>
+                    <small>12:00</small>
+                </ion-col>
+                <ion-col>
+                    <ion-card>
+                        <ion-item>
+                            <ion-avatar item-start>
+                                <img src="assets/imgs/nakta.png">
+                            </ion-avatar>
+                            <h2>National bank of Kuwait</h2>
+                            <p>Open and account</p>
+                        </ion-item>
+                        <ion-card-content>
+                            Shuwaikh - Zain Company - main branch
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+    </div>
+
+</ion-content>

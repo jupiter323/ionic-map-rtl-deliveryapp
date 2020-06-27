@@ -1,0 +1,39 @@
+page-terms {
+    .defult-tab {
+        background: #d71e1e;
+        .text-white {
+            color: #fff;
+            text-transform: none;
+            font-weight: 500;
+            position: relative;
+            &.segment-activated::after {
+                content: '';
+                display: block;
+                position: absolute;
+                background: #fff;
+                width: 50px;
+                height: 3px;
+                bottom: 0;
+                border-radius: 3px;
+                margin: auto;
+                left: 0;
+                right: 0;
+            }
+            &.pp::after {
+                width: 80px;
+            }
+        }
+    }
+    .text-page {
+        padding: 10px;
+        .heading {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.35rem;
+            line-height: 2rem;
+        }
+    }
+}

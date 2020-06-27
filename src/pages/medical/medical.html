@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Medical Shops
+            <span><small margin-right>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <ion-option value="n1">Wallington</ion-option>
+                <ion-option value="n2">Nerobi</ion-option>
+                <ion-option value="n3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <p class="text-danger bg-white heading" padding (click)="medicalmap()">View in map
+        <ion-icon name="ios-arrow-forward"></ion-icon>
+    </p>
+    <ion-card>
+        <ion-item (click)="medicaldetail()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/medical-1.png">
+            </ion-avatar>
+            <h2>Johnson Medical Store</h2>
+            <p>251 Erena street, NY 11102, USA</p>
+            <h6 class="text-success">Open 07:00 to 22:00<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item (click)="medicaldetail()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/medical-2.png">
+            </ion-avatar>
+            <h2>Johnson Medical Store</h2>
+            <p>251 Erena street, NY 11102, USA</p>
+            <h6 class="text-success">Open 07:00 to 22:00<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item (click)="medicaldetail()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/medical-3.png">
+            </ion-avatar>
+            <h2>Johnson Medical Store</h2>
+            <p>251 Erena street, NY 11102, USA</p>
+            <h6 class="text-success">Open 07:00 to 22:00<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item (click)="medicaldetail()">
+            <ion-avatar item-start>
+                <img src="assets/imgs/medical-4.png">
+            </ion-avatar>
+            <h2>Johnson Medical Store</h2>
+            <p>251 Erena street, NY 11102, USA</p>
+            <h6 class="text-success">Open 07:00 to 22:00<button ion-button class="btn success">Call Now</button></h6>
+        </ion-item>
+    </ion-card>
+
+</ion-content>

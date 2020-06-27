@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="md-search" padding-left padding-right></ion-icon>
+            Search Location
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item (click)="tabs()">
+        Select current location
+        <ion-icon name="md-locate" item-end></ion-icon>
+    </ion-item>
+    <div class="my-map">
+        <img src="assets/imgs/map.png" style="position: absolute;height: calc(100% - 50px);bottom: 0;">
+    </div>
+</ion-content>

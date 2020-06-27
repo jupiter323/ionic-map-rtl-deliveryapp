@@ -1,0 +1,65 @@
+page-myfeedbacks {
+    .card {
+        width: 100%;
+        margin: 0px 0 7px 0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        .item {
+            .item-inner {
+                padding-right: 0px;
+            }
+            .label {
+                h2 {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    width: calc(100% - 85px);
+                    color: #3d3d3d;
+                    span {
+                        font-weight: 300;
+                        color: #cbcbcb;
+                    }
+                }
+                p {
+                    font-size: 1.1rem;
+                    width: calc(100% - 85px);
+                    color: #979797;
+                    font-weight: 400;
+                    color: #2f2f2f;
+                    span {
+                        font-weight: 200;
+                        color: #cbcbcb;
+                    }
+                }
+                .rate {
+                    position: absolute;
+                    top: 14px;
+                    right: 10px;
+                    height: 30px;
+                    strong {
+                        margin-right: 4px;
+                        font-size: 1.1rem;
+                    }
+                    ion-icon {
+                        color: #dddddd;
+                        margin-right: -1px;
+                        font-size: 1rem;
+                        &.active {
+                            color: #ffba00;
+                        }
+                    }
+                    span {
+                        display: block;
+                        color: #cecece;
+                        font-size: .9rem;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        ion-card-content {
+            color: #282828;
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding-top: 5px !important;
+        }
+    }
+}

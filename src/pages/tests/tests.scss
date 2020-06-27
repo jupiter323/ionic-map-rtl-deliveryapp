@@ -1,0 +1,32 @@
+page-tests {
+    .searchbar {
+        padding: 0;
+        margin-bottom: 10px;
+        .searchbar-input {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            font-size: 1.2rem;
+        }
+        .searchbar-search-icon {
+            background-size: 16px;
+            opacity: .5;
+            background-position: center;
+        }
+    }
+    ion-list {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #fff;
+    }
+    .item {
+        .item-inner {
+            border: none !important;
+            font-size: 1.2rem;
+            color: #6c6c6c;
+            margin-bottom: -1px;
+            strong {
+                float: right;
+                color: #000;
+            }
+        }
+    }
+}

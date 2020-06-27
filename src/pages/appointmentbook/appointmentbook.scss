@@ -1,0 +1,173 @@
+page-appointmentbook {
+    ion-header {
+        .card {
+            width: 100%;
+            margin: 0;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            background: #d71e1e;
+            .item {
+                background: #d71e1e;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                .label {
+                    h2 {
+                        font-size: 1.35rem;
+                        font-weight: 600;
+                        width: calc(100% - 50px);
+                        color: #fff;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                        width: calc(100% - 50px);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .difault-form {
+        position: relative;
+        .item-inner {
+            box-shadow: none !important;
+            border: none !important;
+            background: #eaeaea;
+            border-radius: 3px;
+            margin: 10px 0 0;
+            padding-left: 10px;
+        }
+        .item {
+            padding: 0;
+            .text-input {
+                font-weight: 300;
+                font-size: 1.3rem;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .list {
+            border: none !important;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 10px;
+            .item-input {
+                border: none !important;
+                min-height: 4rem;
+            }
+            .item-block {
+                .item-inner {
+                    border: none !important;
+                    background: #eaeaea;
+                    border-radius: 3px;
+                    margin: 10px 0 0;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .timeing {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        ion-row {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        span {
+            display: block;
+            text-align: center;
+            background: #fff;
+            border-radius: 30px;
+            font-size: 1rem;
+            padding: 10px 0;
+        }
+    }
+    .fixed {
+        position: fixed;
+        margin: auto;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        bottom: 0;
+        width: calc(100% - 32px);
+        margin-bottom: 10px
+    }
+    p {
+        font-size: 1.15rem;
+    }
+    .segment {
+        overflow: auto;
+    }
+    .segment-button {
+        min-width: 73px;
+    }
+    .calender-container {
+        width: calc(100% - 40px);
+        overflow: hidden;
+        padding-right: 30px;
+        padding-left: 16px;
+        padding-top: 16px;
+        background: #fff;
+    }
+    .calander {
+        width: 100%;
+        overflow-x: auto;
+        position: relative;
+        .calander-row {
+            width: 500px;
+            padding-right: 30px;
+            .day {
+                width: 58px;
+                float: left;
+                position: relative;
+                font-size: 2.5rem;
+                font-weight: 600;
+                text-align: center;
+                height: 5rem;
+                span {
+                    display: block;
+                    font-size: 1.1rem;
+                    color: #6c6c6c;
+                    font-weight: 300;
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 50%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    bottom: 0;
+                    height: 3px;
+                    background: #fff;
+                }
+                &.active {
+                    &::after {
+                        background: #d71e1e;
+                    }
+                }
+            }
+        }
+    }
+    .icon-calander {
+        height: calc(5rem + 16px);
+        background: #fff;
+        width: 40px;
+        text-align: center;
+        line-height: calc(5rem + 16px);
+        position: absolute;
+        top: 0px;
+        right: 0;
+        &::after {
+            content: '';
+            display: block;
+            width: 120px;
+            position: absolute;
+            left: -120px;
+            bottom: 0;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
+            z-index: 1;
+        }
+    }
+}

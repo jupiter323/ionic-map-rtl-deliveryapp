@@ -1,0 +1,119 @@
+page-map {
+    .toolbar-title {
+        display: flex;
+        align-items: center;
+        span.location {
+            display: block;
+            margin-left: auto;
+            position: relative;
+            text-align: right;
+            ion-select {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0;
+                font-size: 1.5rem;
+            }
+        }
+        .select-icon {
+            width: 16px;
+            .select-icon-inner {
+                color: #fff;
+            }
+        }
+    }
+    .card {
+        width: 320px;
+        margin: 0px 2px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        &:hover {
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3) !important;
+            z-index: 2;
+        }
+        .item {
+            .label {
+                h2 {
+                    font-size: 1.35rem;
+                    font-weight: 600;
+                    width: calc(100% - 85px);
+                }
+                p {
+                    font-size: 1.2rem;
+                    width: calc(100% - 85px);
+                    color: #979797;
+                }
+                ion-icon {
+                    position: absolute !important;
+                    top: 16px !important;
+                    right: 10px !important;
+                    padding: 1px 3px !important;
+                    height: 30px !important;
+                    color: #d1d1d1 !important;
+                }
+            }
+        }
+        ion-card-content {
+            color: #979797;
+            font-size: 1.25rem;
+            font-weight: 300;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .about-row {
+            padding: 0;
+            margin: -3px 16px 10px;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: #979797;
+            font-weight: 300;
+            .col {
+                padding: 5px 0;
+            }
+            strong {
+                color: #000;
+                margin-left: 3px;
+            }
+            ion-icon {
+                color: #dddddd;
+                margin-right: -1px;
+                &.active {
+                    color: #ffba00;
+                }
+            }
+        }
+    }
+    .card-container {
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+        left: 0;
+        z-index: 99;
+    }
+    .profile {
+        .profile-img {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 5px solid #d71e1e;
+            border-radius: 50%;
+            z-index: 1;
+            &.active {
+                border: 5px solid #25a628;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: -1;
+                    background: rgba(37, 166, 40, 0.2);
+                    top: -15px;
+                    left: -15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+page-location {
+    .back-button {
+        display: none !important;
+    }
+    .toolbar-title {
+        display: flex;
+    }
+    .item-inner {
+        border: none !important;
+        color: #25a628;
+        font-size: 1.4rem;
+        ion-icon {
+            font-size: 2rem;
+            line-height: 28px;
+        }
+    }
+}

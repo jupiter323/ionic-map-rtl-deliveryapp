@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="md-close" (click)="dismiss()"></ion-icon>&nbsp;&nbsp;&nbsp;Search
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Search for tests"></ion-searchbar>
+    <ion-list>
+        <ion-item>
+            Acetoacetate<strong>40 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetoaceti Acid<strong>20 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetone<strong>10 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetylcholine Receptor<strong>23 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetylcholine Receptor Antibody<strong>15 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetylcholine Receptor Binding<strong>47 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetylcholine Receptor Blocking<strong>50 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetylcholine Modulating Antibody<strong>35 $</strong>
+        </ion-item>
+        <ion-item>
+            Acetylsalicylic Acide<strong>19 $</strong>
+        </ion-item>
+    </ion-list>
+</ion-content>

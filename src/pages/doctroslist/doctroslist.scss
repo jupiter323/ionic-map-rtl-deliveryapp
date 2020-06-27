@@ -1,0 +1,114 @@
+page-doctroslist {
+    .toolbar-title {
+        display: flex;
+        align-items: center;
+        span.location {
+            display: block;
+            margin-left: auto;
+            position: relative;
+            text-align: right;
+            ion-select {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0;
+                font-size: 1.5rem;
+            }
+        }
+        .select-icon {
+            width: 16px;
+            .select-icon-inner {
+                color: #fff;
+            }
+        }
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        .item {
+            .label {
+                h2 {
+                    font-size: 1.35rem;
+                    font-weight: 600;
+                    width: calc(100% - 85px);
+                }
+                p {
+                    font-size: 1.2rem;
+                    width: calc(100% - 85px);
+                    color: #979797;
+                }
+                .item-button {
+                    position: absolute;
+                    top: 16px;
+                    right: 10px;
+                    padding: 1px 25px;
+                    height: 28px !important;
+                }
+            }
+        }
+        ion-card-content {
+            color: #979797;
+            font-size: 1.25rem;
+            font-weight: 300;
+            .img-container {
+                width: calc(100% + 16px);
+                margin-top: 10px;
+                overflow: hidden;
+                overflow-x: visible;
+                .imges-row {
+                    img {
+                        width: 90px;
+                        display: block;
+                        float: left;
+                        margin-right: 3px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+        .about-row {
+            padding: 0;
+            margin: -3px 16px 10px;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: #979797;
+            font-weight: 300;
+            .col {
+                padding: 5px 0;
+            }
+            strong {
+                color: #000;
+                margin-left: 3px;
+            }
+            ion-icon {
+                color: #dddddd;
+                margin-right: -1px;
+                &.active {
+                    color: #ffba00;
+                }
+            }
+        }
+    }
+    .filter {
+        background: #fff;
+        font-size: 1.2rem;
+        font-weight: 200;
+        white-space: nowrap;
+        .text-danger {
+            font-weight: 500;
+            ion-icon {
+                margin-right: 5px;
+            }
+        }
+        .col {
+            padding: 0;
+            color: #aba9a9;
+        }
+    }
+    .scroll-zoom-wrapper {
+        img {
+            display: inline;
+            width: 75px;
+            height: 60px;
+        }
+    }
+}

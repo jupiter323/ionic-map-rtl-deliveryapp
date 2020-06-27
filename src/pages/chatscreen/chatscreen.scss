@@ -1,0 +1,74 @@
+page-chatscreen {
+    .chat-bg {
+        background-attachment: fixed !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    p {
+        padding: 16px;
+        font-size: 1.15rem;
+        line-height: 1.5;
+        clear: both;
+        font-weight: 500;
+        max-width: 90%;
+        min-width: 70%;
+        small {
+            display: block;
+            margin-top: 5px;
+            text-align: right;
+            font-weight: 300;
+        }
+        &.send {
+            background: #fff;
+            border-radius: 20px 0px 20px 20px;
+            float: right;
+            text-align: right;
+        }
+        &.receve {
+            background: #d71e1e;
+            color: #fff;
+            border-radius: 0px 20px 20px 20px;
+            float: left;
+            text-align: left;
+            position: relative;
+            margin-left: 60px;
+            img {
+                position: absolute;
+                top: 0;
+                left: -60px;
+                width: 50px;
+            }
+        }
+    }
+    .chat-input {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 5px 16px 5px 0;
+        background: #fff;
+        display: flex;
+        ion-icon {
+            line-height: 44px;
+            font-size: 2rem;
+            width: 50px;
+            text-align: center;
+            &.attachment {
+                transform: rotate(90deg);
+                width: 60px;
+                color: #979797;
+            }
+        }
+        .item {
+            border: none !important;
+            .item-inner {
+                border: none !important;
+                box-shadow: none !important;
+                ion-input {
+                    max-width: calc(100% - 90px);
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

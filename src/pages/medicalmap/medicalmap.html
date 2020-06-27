@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="md-close" (click)="dismiss()"></ion-icon>&nbsp;&nbsp;&nbsp;Map View
+            <span class="location"><small>Location</small>
+            <ion-select [(ngModel)]="location" interface="popover" class="location">
+                <ion-option value="b1">Wallington</ion-option>
+                <ion-option value="b2">Nerobi</ion-option>
+                <ion-option value="b3">Central Park</ion-option>
+              </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <img src="assets/imgs/map.png" style="position: absolute;height: 100%;bottom: 0;z-index: -99;">
+
+    <div class="location-point">
+        <ion-icon name="pin" class="text-danger" style="top: 20%; left: 20%"></ion-icon>
+        <ion-icon name="pin" class="text-danger" style="top: 40%; left: 70%"></ion-icon>
+        <ion-icon name="pin" class="text-danger" style="top: 60%; left: 10%"></ion-icon>
+        <ion-icon name="pin" class="text-danger" style="top: 45%; left: 85%"></ion-icon>
+        <ion-icon name="pin" class="text-success" style="top: 50%; left: 20%"></ion-icon>
+    </div>
+
+
+
+    <div class="card-container">
+        <ion-scroll scrollX="true" style="height:110px;white-space: nowrap;">
+            <ion-card>
+                <ion-item (click)="medicaldetail()" (click)="dismiss()">
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/medical-1.png">
+                    </ion-avatar>
+                    <h2>Johnson Medical Store</h2>
+                    <p>251 Erena street, NY 11102, USA</p>
+                    <h6 class="text-success">Open 07:00 to 22:00 </h6>
+                </ion-item>
+            </ion-card>
+            <ion-card>
+                <ion-item (click)="medicaldetail()" (click)="dismiss()">
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/medical-1.png">
+                    </ion-avatar>
+                    <h2>Johnson Medical Store</h2>
+                    <p>251 Erena street, NY 11102, USA</p>
+                    <h6 class="text-success">Open 07:00 to 22:00 </h6>
+                </ion-item>
+            </ion-card>
+            <ion-card>
+                <ion-item (click)="medicaldetail()" (click)="dismiss()">
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/medical-1.png">
+                    </ion-avatar>
+                    <h2>Johnson Medical Store</h2>
+                    <p>251 Erena street, NY 11102, USA</p>
+                    <h6 class="text-success">Open 07:00 to 22:00 </h6>
+                </ion-item>
+            </ion-card>
+        </ion-scroll>
+    </div>
+</ion-content>

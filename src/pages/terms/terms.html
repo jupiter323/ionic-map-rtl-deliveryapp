@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Terms & Condition
+        </ion-title>
+    </ion-navbar>
+    <div class="defult-tab">
+        <ion-segment [(ngModel)]="tnc" padding-left padding-right>
+            <ion-segment-button value="tc" class="text-white">
+                Terms
+            </ion-segment-button>
+            <ion-segment-button value="pp" class="text-white pp">
+                Privacy Policy
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div [ngSwitch]="tnc" class="difault-form bg-light" padding>
+        <ion-list *ngSwitchCase="'tc'">
+            <div class="text-page">
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <h1 class="text-danger heading">Terms With DoctoHub</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+            </div>
+        </ion-list>
+        <ion-list *ngSwitchCase="'pp'">
+            <div class="text-page">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <h1 class="text-danger heading">Privacy Policy With DoctoHub</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+            </div>
+        </ion-list>
+    </div>
+</ion-content>
