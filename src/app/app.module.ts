@@ -47,6 +47,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TranslateLoader, TranslateStaticLoader } from 'ng2-translate/src/translate.service';
 import { Http } from '@angular/http';
 import { TranslateModule } from 'ng2-translate/ng2-translate';
+import { ApiProvider } from '../providers/api/api';
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -146,7 +147,8 @@ export function createTranslateLoader(http: Http) {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ApiProvider
   ]
 })
 export class AppModule {}
