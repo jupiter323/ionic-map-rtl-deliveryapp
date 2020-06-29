@@ -27,7 +27,7 @@ export class SigninPage {
 
     var data = JSON.stringify({ "civilId": "111111111111", "password": "abc", "deviceId": "35 326607 029373 3" });
     this.api.post('login', data).share().map((resp: any) => resp.json()).subscribe(res => console.log('response from api :', res), err => console.log('error :', err));
-    // this.navCtrl.push(TabsPage);
+    this.navCtrl.push(TabsPage);
   }
   forgotpassword() {
     this.navCtrl.push(ForgotpasswordPage);
