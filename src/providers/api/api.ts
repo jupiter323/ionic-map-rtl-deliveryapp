@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ApiProvider {
 
-  url: string = 'http://41.65.9.67:8090/besh-booking/rest/';
+  url: string = 'http://41.65.9.67:8090/besh-booking/rest';
 
   constructor(public http: HttpClient) {
     console.log('Hello ApiProvider Provider');

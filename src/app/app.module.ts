@@ -48,6 +48,7 @@ import { TranslateLoader, TranslateStaticLoader } from 'ng2-translate/src/transl
 import { Http } from '@angular/http';
 import { TranslateModule } from 'ng2-translate/ng2-translate';
 import { ApiProvider } from '../providers/api/api';
+import { HttpClientModule } from '@angular/common/http';
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -101,7 +102,8 @@ export function createTranslateLoader(http: Http) {
 			provide: TranslateLoader,
 			useFactory: (createTranslateLoader),
 			deps: [Http]
-		}),
+    }),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
