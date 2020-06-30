@@ -48,10 +48,12 @@ import { TranslateLoader, TranslateStaticLoader } from 'ng2-translate/src/transl
 import { Http } from '@angular/http';
 import { TranslateModule } from 'ng2-translate/ng2-translate';
 import { ApiProvider } from '../providers/api/api';
+import { TranslateProvider } from './../providers/translate/translate';
+
 import { HttpClientModule } from '@angular/common/http';
 
 export function createTranslateLoader(http: Http) {
-	return new TranslateStaticLoader(http, 'assets/i18n', '.json');
+  return new TranslateStaticLoader(http, 'assets/i18n', '.json');
 }
 
 @NgModule({
@@ -93,15 +95,15 @@ export function createTranslateLoader(http: Http) {
     TermsPage,
     HelpPage,
     SettingsPage
-    
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     TranslateModule.forRoot({
-			provide: TranslateLoader,
-			useFactory: (createTranslateLoader),
-			deps: [Http]
+      provide: TranslateLoader,
+      useFactory: (createTranslateLoader),
+      deps: [Http]
     }),
     HttpClientModule
   ],
@@ -144,13 +146,14 @@ export function createTranslateLoader(http: Http) {
     TermsPage,
     HelpPage,
     SettingsPage
-    
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ApiProvider
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    ApiProvider,
+    TranslateProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }

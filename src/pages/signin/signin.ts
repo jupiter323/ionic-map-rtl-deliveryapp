@@ -20,7 +20,8 @@ export class SigninPage {
 
   constructor(public navCtrl: NavController, translate: TranslateService, private api: ApiProvider) {
     this.translate = translate;
-    translate.setDefaultLang("en");
+    // translate.setDefaultLang("en");
+    translate.use('ar');
   }
 
   tabs() {

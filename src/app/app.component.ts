@@ -36,6 +36,7 @@ import { SigninPage } from '../pages/signin/signin';
 //import { TermsPage } from '../pages/terms/terms';
 //import { HelpPage } from '../pages/help/help';
 //import { SettingsPage } from '../pages/settings/settings';
+import { TranslateProvider } from './../providers/translate/translate';
 
 
 @Component({
@@ -44,10 +45,9 @@ import { SigninPage } from '../pages/signin/signin';
 export class MyApp {
   rootPage:any = SigninPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private trsanlateService: TranslateProvider) {
     platform.ready().then(() => {
-      platform.setDir('rtl', true);
-      platform.setDir('ltr', false);
+      trsanlateService.subscribeChangeLang(platform);
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
